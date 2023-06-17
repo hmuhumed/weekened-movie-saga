@@ -38,8 +38,21 @@ function MovieDescription() {
                     <p key={i} className="genre">Genre: {genre.name}</p>
                 ))}
             </div>
-            
-        
+            <img className="image" src={movie.poster}></img>
+            <br></br>
+            <p className="description">{movie.description}</p>
+            <br></br>
+            <h3 className="trailer-header">Trailer</h3>
+            <iframe
+                width="560"
+                height="315"
+                src={movie.trailer}
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+            ></iframe>
+            <button className="backButton" onClick={() => handleClick()}>Back</button>
         </>
     )
 }
