@@ -6,6 +6,7 @@ CREATE TABLE "movies" (
   "title" VARCHAR(120) NOT NULL,
   "poster"  VARCHAR(120) NOT NULL,
   "description" TEXT NOT NULL
+  "trailer" VARCHAR(300) 
 );
 
 
