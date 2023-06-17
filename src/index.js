@@ -39,7 +39,7 @@ function* fetchAllGenres(action) {
         // PUT will send the data we receive to our reducer called genres
         // with the action type of 'SET_MOVIES'
         yield put({
-            type: 'SET_MOVIES',
+            type: 'SET_GENRES',
             payload: genres.data
         })
     } catch (error) {
