@@ -18,8 +18,12 @@ function MovieDescription() {
             payload: params.id
         })
     }, [params.id]);
-    
 
+    const movie = useSelector((store) => store.movies.find((movie) => movie.id == params.id))
+
+    const genre = useSelector(store => store.genres);
+
+    
 
 
     return (
