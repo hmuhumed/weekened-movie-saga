@@ -19,17 +19,26 @@ function MovieDescription() {
         })
     }, [params.id]);
 
+
     const movie = useSelector((store) => store.movies.find((movie) => movie.id == params.id))
 
     const genre = useSelector(store => store.genres);
 
-    
+    // This function will be connected to our back button to send the user back to the homepage.
+    const handleClick = () => {
+        history.push("/")
+    }
 
 
     return (
         <>
-        
-        
+            <h2 className="title">Title: {movie.title}</h2>
+            <div>
+                {genre.map((genres , i ) => (
+                    <p key={i} className="genre">Genre: {genre.name}</p>
+                ))}
+            </div>
+            
         
         </>
     )
