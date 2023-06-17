@@ -2,3 +2,61 @@
     display : flex;
     flex-wrap: wrap;
 }
+
+main {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .movies div {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .movies div:hover {
+    transform: scale(1.05);
+  }
+  
+  h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  img:hover {
+    opacity: 0.8;
+  }
+
+  .movieList {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 50px;
+  }
+  
+  .movieList:hover {
+    color: #a600ff; 
+    text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  }
