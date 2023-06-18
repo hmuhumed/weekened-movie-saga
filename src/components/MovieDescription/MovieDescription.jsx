@@ -39,7 +39,6 @@ function MovieDescription() {
                 ))}
             </div>
             <img className="image" src={movie.poster}></img>
-            <br></br>
             <p className="description">{movie.description}</p>
             <br></br>
             <h3 className="trailer-header">Trailer</h3>
@@ -52,6 +51,7 @@ function MovieDescription() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowFullScreen
             ></iframe>
+            <br></br>
             <br></br>
             <button className="backButton" onClick={() => handleClick()}>Back</button>
         </>
