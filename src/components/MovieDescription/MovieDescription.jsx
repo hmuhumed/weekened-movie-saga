@@ -19,7 +19,7 @@ function MovieDescription() {
         })
     }, [params.id]);
 
-
+    
     const movie = useSelector((store) => store.movies.find((movie) => movie.id == params.id))
 
     const genre = useSelector(store => store.genres);
@@ -32,10 +32,10 @@ function MovieDescription() {
 
     return (
         <>
-            <h2 className="title">Title: {movie.title}</h2>
+            <h2 className="title">{movie.title}</h2>
             <div>
                 {genre.map((genres , i ) => (
-                    <p key={i} className="genre">Genre: {genres.name}</p>
+                    <p key={i} className="genre">{genres.name}</p>
                 ))}
             </div>
             <img className="image" src={movie.poster}></img>
