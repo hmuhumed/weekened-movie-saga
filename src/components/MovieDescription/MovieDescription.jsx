@@ -35,7 +35,7 @@ function MovieDescription() {
             <h2 className="title">Title: {movie.title}</h2>
             <div>
                 {genre.map((genres , i ) => (
-                    <p key={i} className="genre">Genre: {genre.name}</p>
+                    <p key={i} className="genre">Genre:{genres.name}</p>
                 ))}
             </div>
             <img className="image" src={movie.poster}></img>
@@ -48,9 +48,9 @@ function MovieDescription() {
                 height="315"
                 src={movie.trailer}
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen
+                allowFullScreen
             ></iframe>
             <button className="backButton" onClick={() => handleClick()}>Back</button>
         </>
